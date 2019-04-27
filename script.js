@@ -1,3 +1,1 @@
-(function hidden(stuff) {
-  console.log(stuff);
-})("hidden");
+console.log(config.MY_KEY);
