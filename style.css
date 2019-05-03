@@ -1,10 +1,107 @@
 .web-title {
   position: absolute;
   width: 350px;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   background: #ff5049;
   color: #fff;
+}
+
+.plus-container {
+  position: absolute;
+  height: 105px;
+  width: 105px;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  /* background: #2d3436; */
+}
+#criss1 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background: #ecf0f1;
+  height: 106px;
+  width: 28px;
+}
+#cross1 {
+  background: #ecf0f1;
+  position: relative;
+  content: "";
+  top: -50%;
+  transform: translate(0%, -50%);
+  height: 28px;
+  width: 106px;
+}
+
+#criss2 {
+  position: relative;
+  top: -124%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background: #2d3436;
+  height: 100px;
+  width: 20px;
+}
+#cross2 {
+  background: #2d3436;
+  position: relative;
+  content: "";
+  top: 50%;
+  left: 3px;
+  transform: translate(0%, -50%);
+  height: 20px;
+  width: 100px;
+}
+
+.arrow {
+  position: relative;
+  color: #636e72;
+  font-size: 22px;
+  height: 20px;
+  width: 20px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  outline: 0;
+}
+
+#up-arrow {
+  position: relative;
+  left: -7px;
+}
+#up-arrow:active {
+  transform: translateY(-2px);
+}
+
+#down-arrow {
+  position: relative;
+  cursor: pointer;
+  background-position: 1px;
+  left: -7px;
+  top: 48px;
+}
+#down-arrow:active {
+  transform: translateY(2px);
+}
+
+#left-arrow {
+  position: relative;
+  left: -5px;
+  top: -2px;
+}
+#left-arrow:active {
+  transform: translateX(-2px);
+}
+
+#right-arrow {
+  position: relative;
+  cursor: pointer;
+  background-position: 1px;
+  left: 71px;
+  top: -30px;
+}
+#right-arrow:active {
+  transform: translateX(2px);
 }
