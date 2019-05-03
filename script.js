@@ -1,53 +1,43 @@
-const DOMstrings = {
-  upArrow: "up-arrow",
-  downArrow: "down-arrow",
-  leftArrow: "left-arrow",
-  rightArrow: "right-arrow"
-};
-
 (() => {
+  const DOMstrings = {
+    upArrow: "up-arrow",
+    downArrow: "down-arrow",
+    leftArrow: "left-arrow",
+    rightArrow: "right-arrow",
+    select: "select",
+    start: "start"
+  };
   let count = 0;
   document
     .getElementById(DOMstrings.upArrow)
     .addEventListener("click", function() {
-      if (count === 0 || count === 1) {
-        count++;
-      } else {
-        count = 0;
-      }
+      count === 0 || count === 1 ? count++ : (count = 0);
       console.log(count);
     });
 
   document
     .getElementById(DOMstrings.downArrow)
     .addEventListener("click", function() {
-      if (count === 2 || count === 3) {
-        count++;
-      } else {
-        count = 0;
-      }
+      count === 2 || count === 3 ? count++ : (count = 0);
       console.log(count);
     });
 
   document
     .getElementById(DOMstrings.leftArrow)
     .addEventListener("click", function() {
-      if (count === 4 || count === 6) {
-        count++;
-      } else {
-        count = 0;
-      }
+      count === 4 || count === 6 ? count++ : (count = 0);
       console.log(count);
     });
 
   document
     .getElementById(DOMstrings.rightArrow)
     .addEventListener("click", function() {
-      if (count === 5 || count === 7) {
-        count++;
-      } else {
-        count = 0;
-      }
+      count === 5 || count === 7 ? count++ : (count = 0);
       console.log(count);
+    });
+  document
+    .getElementById(DOMstrings.select)
+    .addEventListener("click", function() {
+      count = 0;
     });
 })();
